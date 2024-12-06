@@ -66,10 +66,6 @@ params:
     displayBackToTop: true
     displayLastUpdated: true
 
-  # editURL:
-  #   enable: false
-  #   base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
-
   theme:
     # light | dark | system
     default: system

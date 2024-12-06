@@ -7,7 +7,7 @@ weight: 3
 math: true
 ---
 
-The submitted prompts will undergo an evaluation process that involves subjecting them to 10 trials for each of the 26 uppercase letters of the English alphabet (A-Z). The levels generated for each character will be evaluated based on their similarity, stability, and diversity, and scored using the criteria outlined in the scoring policy given below. The entire evaluation process will be conducted using [automated scripts and programs](/competition/resources).
+The submitted prompts will undergo an evaluation process that involves subjecting them to 10 trials for each of the 26 uppercase letters of the English alphabet (A-Z). The levels generated for each character will be evaluated based on their similarity, stability, and diversity, and scored using the criteria outlined in the scoring policy given below. The entire evaluation process will be conducted using [automated scripts and programs]({{< ref "/competition/resources">}}).
 
 Please note that the evaluation process will be conducted twice, at midterm and final stages. The number of trials and characters in the evaluation set may be adjusted based on the number of teams.
 
@@ -127,7 +127,7 @@ and the shortest prompt, they will be considered co-winners.
 
 3. [vit-base-uppercase-english-characters](https://huggingface.co/pittawat/vit-base-uppercase-english-characters).
 
-4. Automation scripts available on our [Resources](/competition/resources) page.
+4. Automation scripts available on our [Resources]({{< ref "/competition/resources">}}) page.
 
 ## Evaluation Environment for Response Generation Stage
 
@@ -136,7 +136,7 @@ Software:
 - OS: macOS Sonoma Version 14.5
 - Python: 3.11.xx
 - Unity: 2019.4.40f1 - [Science Birds Evaluator](https://github.com/chatgpt4pcg/modified-science-birds)
-- [Our automation scripts](/competition/resources)
+- [Our automation scripts]({{< ref "/competition/resources">}})
 
 Hardware:
 
@@ -152,6 +152,6 @@ Hardware:
 6. The [text-to-xml conversion script](https://github.com/chatgpt4pcg/text-to-xml-converter-script) will load each code file and convert it into a Science Birds level description XML file.
 7. Next, [Science Birds Evaluator](https://github.com/chatgpt4pcg/modified-science-birds) will individually load all levels to assess their stability and capture their images. The results of stability will be recorded, and for each level an image of the structure with black-textured blocks on a white background will be produced by the program.
 8. The [similarity checking script](https://github.com/chatgpt4pcg/similarity-checking-script) will load each image and pass it through an open source-model called [vit-base-uppercase-english-characters](https://huggingface.co/pittawat/vit-base-uppercase-english-characters). It will then record the similarity result.
-9. The [diversity checking script](https://github.com/chatgpt4pcg/diversity-checking-script) assesses the diversity of the levels by averaging the cosine distance of non-duplicated all-pairs of outputs from softmax for each level across trial of the same target character as described in the [Evaluation](/competition/rules/evaluation).
+9. The [diversity checking script](https://github.com/chatgpt4pcg/diversity-checking-script) assesses the diversity of the levels by averaging the cosine distance of non-duplicated all-pairs of outputs from softmax for each level across trial of the same target character as described in the [Evaluation]({{< ref "/competition/rules/evaluation">}}).
 10. The [scoring and ranking script](https://github.com/chatgpt4pcg/scoring-and-ranking-script) will load all stability, similarity, and diversity results and produce the final rank and score result for all teams according to the scoring policy.
 11. Finally, we will calculate the sum of scores for all three models. Evaluation process for results from each model is same as this year competition.

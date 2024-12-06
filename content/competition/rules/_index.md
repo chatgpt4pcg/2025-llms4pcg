@@ -12,7 +12,7 @@ sidebar:
 
 1. Any form of cheating, as determined by the organizers, will result in automatic disqualification from the competition.
 2. Any intended attempts to harm the computing system used to conduct the evaluation process will result in automatic disqualification
-3. The organizers reserve the right to update the rules and details of the competition at any time. Any changes will be communicated through the changlog [here](/changelog).
+3. The organizers reserve the right to update the rules and details of the competition at any time. Any changes will be communicated through the changlog [here]({{< ref "/changelog">}}).
 
 Please refer to the Prompt, Submission, and Evaluation page for information regarding prompt rules and specifications, submission guidelines, and the evaluation process and policies.
 {{< cards >}}
