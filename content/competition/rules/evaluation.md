@@ -21,48 +21,37 @@ $A \ B \ C \ D \ E \ F \ G \ H \ I \ J \ K \ L \ M \ N \ O \ P \ Q \ R \ S \ T \
 
 ## Scoring Policy
 
-{{< callout type="error" >}}
-Calculate the sum of scores for all three models
-{{< /callout >}}
+The following scoring process is applied for each prompt score per model. After calculating the prompt scores for all three models, the scores are summed before normalization for the final ranking.
 
 In trial $i$ of target character $j$ for program $k$:
 
-1. **Stability**: The stability of a level is evaluated
-   using our [Science Birds Evaluator](https://github.com/chatgpt4pcg/modified-science-birds). Here, $total\\_blocks\_{ijk}$ is defined as
-   the number of blocks at the initialization step of loading the
-   level into the evaluator. Then the program will calculate the
-   value of $moving\\_blocks\_{ijk}$
-   which is defined as the number of moving blocks during the first
-   10 seconds after level initialization. Each level will receive an $sta\_{ijk}$ score according to the following
-   equation. The score has a continuous value in $[0, 1]$.
+### Stability
 
-   $$ sta\_{ijk} = \frac{total\\\_blocks\_{ijk} - moving\\\_blocks\_{ijk}}{total\\\_blocks\_{ijk}} $$
+The stability of a level is evaluated
+using our [Science Birds Evaluator](https://github.com/chatgpt4pcg/modified-science-birds). Here, $total\\_blocks\_{ijk}$ is defined asthe number of blocks at the initialization step of loading the level into the evaluator. Then the program will calculate the value of $moving\\_blocks\_{ijk}$ which is defined as the number of moving blocks during the first 10 seconds after level initialization. Each level will receive an $sta\_{ijk}$ score according to the following equation. The score has a continuous value in $[0, 1]$.
 
-2. **Similarity**: The similarity score reflects the softmax probability $\sigma (\textbf{z}_{ijk})_j$
-   of the model called [vit-base-uppercase-english-characters](https://huggingface.co/pittawat/vit-base-uppercase-english-characters),
-   which is used to infer target character $j$ in
-   trial $i$ from the image of the generated
-   level after the first 10 seconds of initialization. Each level
-   will receive a continuous value between $[0, 1]$. This score, $sim\_{ijk}$, is given as
+$$ sta\_{ijk} = \frac{total\\\_blocks\_{ijk} - moving\\\_blocks\_{ijk}}{total\\\_blocks\_{ijk}} $$
 
-   $$sim_{ijk} = \sigma (\textbf{z}_{ijk})_j$$
+### Similarity
 
-3. **Diversity**: The diversity score represents how
-   diverse the generated levels are under the same target character $j$ for program $k$. The
-   score, $div_{jk}$, is calculated by computing
-   cosine distance, $D_c$, of unordered pairs
-   in the set $A$ containing pairs of output
-   vectors from the softmax probability, $\textbf{v}\_{ijk} = \sigma(\textbf{z}_{ijk})$.
-   $\Xi\_{jk}$ denotes a set containing all such
-   vectors across trials of the same target character $j$ from the same program $k$.
+The similarity score reflects the softmax probability $\sigma (\textbf{z}_{ijk})_j$ of the model called [vit-base-uppercase-english-characters](https://huggingface.co/pittawat/vit-base-uppercase-english-characters), which is used to infer target character $j$ in trial $i$ from the image of the generated level after the first 10 seconds of initialization. Each level will receive a continuous value between $[0, 1]$. This score, $sim\_{ijk}$, is given as
 
-   $$div_{jk} = \frac{\sum_a^{|A_{jk}|} D_c(\textbf{v}_a^1, \textbf{v}_a^2)}{0.5T(T+1)-T}\text{,}$$
+$$sim_{ijk} = \sigma (\textbf{z}_{ijk})_j$$
 
-   where
+### Diversity
 
-   $$ A\_{jk} = \\{(\textbf{v}\_a^1, \textbf{v}\_a^2) | (\textbf{v}\_a^1, \textbf{v}\_a^2) \in \Xi\_{jk} \bowtie \Xi\_{jk} \land v_a^1 \neq v_a^2 \\} $$
+The diversity score represents how diverse the generated levels are under the same target character $j$ for program $k$. The score, $div_{jk}$, is calculated by computing cosine distance, $D_c$, of unordered pairs in the set $A$ containing pairs of output vectors from the softmax probability, $\textbf{v}\_{ijk} = \sigma(\textbf{z}_{ijk})$.
+$\Xi\_{jk}$ denotes a set containing all such vectors across trials of the same target character $j$ from the same program $k$.
 
-   and $T$ represents the number of trials per target character.
+$$div_{jk} = \frac{\sum_a^{|A_{jk}|} D_c(\textbf{v}_a^1, \textbf{v}_a^2)}{0.5T(T+1)-T}\text{,}$$
+
+where
+
+$$ A\_{jk} = \\{(\textbf{v}\_a^1, \textbf{v}\_a^2) | (\textbf{v}\_a^1, \textbf{v}\_a^2) \in \Xi\_{jk} \bowtie \Xi\_{jk} \land v_a^1 \neq v_a^2 \\} $$
+
+and $T$ represents the number of trials per target character.
+
+### Weighting
 
 Given that $P$ and $C$ represent the number of programs in the competition and the number of
 characters, respectively, to give a higher weight to a more
@@ -81,6 +70,8 @@ and
 
 $$w\\_div\_{j} = max(1 - \frac{\sum\_{k=1}^{P} div\_{jk}}{P}, \frac{1}{C})$$
 
+### Scoring
+
 Next, the weighted $trial_{ijk}$ score is defined as follows:
 
 $$trial_{ijk} = weight_{j} \times sta_{ijk} \times sim_{ijk}$$
@@ -94,7 +85,27 @@ The $prompt_{k}$ score is defined as follows:
 
 $$prompt_{k} = \frac{\sum_{j=1}^{C} char_{jk}}{C}$$
 
-Next, the normalized $prompt_{k}$ score, $norm\\_prompt\_{k}$, is defined as follows:
+### Final Scoring and Normalization
+
+After calculating the $prompt_{k}$ score for each of the three models, sum these scores to get the total prompt score for program $k$:
+
+$$ total\\_prompt\_{k} = \sum\_{m=1}^{3} prompt\_{k,m}$$
+
+where $m$ represents each of the three models.
+
+Next, the normalized $total\\_prompt\_{k}$ score, $norm\\_total\\_prompt\_{k}$, is defined as follows:
+
+$$$$
+
+$$ norm\\_total\\_prompt\_{k} = 100\ \frac{total\\_prompt\_{k}}{competition},$$ 
+
+where
+
+$$competition = \sum_{k=1}^P total\\_prompt\_{k}$$
+
+Finally, $norm\\_total\\_prompt\_{k}$ will be used for ranking.
+
+<!-- Next, the normalized $prompt_{k}$ score, $norm\\_prompt\_{k}$, is defined as follows:
 
 $$norm\\_prompt\_{k} = 100\ \frac{prompt\_{k}}{competition}\text{,}$$
 
@@ -102,13 +113,11 @@ where
 
 $$competition = \sum_{k=1}^{P} prompt_{k}$$
 
-Finally, $norm\\_prompt\_{k}$ will be used for ranking.
+Finally, $norm\\_prompt\_{k}$ will be used for ranking. -->
 
 ## Ranking Policy
 
-The team that has the highest $norm\\_prompt\_{k}$ will be declared the winner. If there are multiple teams with the same highest score, the one with the shortest prompt will be chosen
-as the winner. However, if multiple teams still have the same score
-and the shortest prompt, they will be considered co-winners.
+The team that has the highest $norm\\_total\\_prompt\_{k}$ will be declared the winner. If there are multiple teams with the same highest score, the one with the shortest prompt will be chosen as the winner. However, if multiple teams still have the same score and the shortest prompt, they will be considered co-winners.
 
 ## Evaluation Tools
 

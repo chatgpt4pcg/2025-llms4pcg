@@ -5,6 +5,8 @@ toc: false
 
 ## The LLMs4PCG Competition <br/> Character-like Level Generation for Science Birds
 
+![](/images/LLMs4PCG_ci.png)
+
 {{< callout emoji="👾" >}}
 Welcome to the **2025 LLMs4PCG** Competition. Here you will be provided all the necessary information needed to participate in the competition.
 {{< /callout >}}
