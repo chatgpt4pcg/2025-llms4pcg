@@ -1,5 +1,7 @@
 # The LLMs4PCG Competition: Character-like Level Generation for Science Birds
 
+![](/static/images/LLMs4PCG_ci.png)
+
 The LLMs4PCG Competition builds upon the challenging and exciting spirit of the first and second ChatGPT4PCG competitions while introducing significant changes. This edition expands the competition beyond ChatGPT to include a variety of open-source large language models (LLMs). Participants are challenged to develop prompts or prompt engineering techniques that can construct stable Science Birds levels resembling uppercase English characters using these diverse LLMs.
 
 We've enhanced the competition platform to support a wide range of open-source LLMs, allowing participants to explore and compare the capabilities of different models. Submissions can now be in the form of Python programs, enabling more complex prompt engineering techniques that utilize conditions, iterations, and advanced logic. This opens up possibilities for developing novel approaches and potentially creating new prompt engineering methods tailored to specific LLMs.
