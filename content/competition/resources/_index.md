@@ -7,16 +7,17 @@ weight: 4
 
 ## Prompt Engineering Examples
 
-We provide a few example programs implemented using various prompt engineering techniques. These examples are offered to assist you in getting started with the competition. You can utilize these examples as a foundation to develop your own advanced prompt engineering techniques. The examples are accessible in a GitHub repository, which you can find [here](https://github.com/chatgpt4pcg/pe-examples?tab=readme-ov-file)
-_(openai'key is needed to run the code for previous [ChatGPT4PCG 2 competition](https://chatgpt4pcg.github.io/))_
+We provide a few example programs implemented using various prompt engineering techniques. These examples are offered to assist you in getting started with the competition. You can utilize these examples as a foundation to develop your own advanced prompt engineering techniques. The examples are accessible in a GitHub repository, which you can find [here](https://github.com/chatgpt4pcg/llms4pcg-pe-examples).
 
 ## Tools
 
-### LM Studio
+### Ollama
 
-- `qwen2.5-32B`: `Q8_0` [bartowski/Qwen2.5-32B-Instruct-GGUF](https://model.lmstudio.ai/download/bartowski/Qwen2.5-32B-Instruct-GGUF)
-- `phi-3-medium`: `Q8_0` [ssmits/Phi-3-medium-128k-instruct-Q8_0-GGUF](https://model.lmstudio.ai/download/ssmits/Phi-3-medium-128k-instruct-Q8_0-GGUF)
-- `llama3.1-70B`: `Q4_K_M` [bartowski/Meta-Llama-3.1-70B-Instruct-GGUF](https://model.lmstudio.ai/download/bartowski/Meta-Llama-3.1-70B-Instruct-GGUF)
+Streamlined tool for running open-source LLMs locally,
+
+- **qwen 2.5** `32b`: [`32b-instruct-fp16`](https://ollama.com/library/qwen2.5:32b-instruct-fp16)
+- **phi 3** `14b`: [`14b-medium-128k-instruct-fp16`](https://ollama.com/library/phi3:14b-medium-128k-instruct-fp16)
+- **gemma 2** `27b`: [`27b-instruct-fp16`](https://ollama.com/library/gemma2:27b-instruct-fp16)
 
 ### Science Birds Evaluator
 
