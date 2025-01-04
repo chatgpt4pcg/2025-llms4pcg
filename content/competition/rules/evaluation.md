@@ -121,11 +121,11 @@ The team that has the highest $norm\\_total\\_prompt\_{k}$ will be declared the 
 
 ## Evaluation Tools
 
-1. We will conduct the final evaluation on these 3 models:
+1. We will conduct the final evaluation on these 3 models using [Ollama](https://ollama.com/) interface:
 
-   - `qwen2.5-32B`: `Q8_0` [bartowski/Qwen2.5-32B-Instruct-GGUF](https://model.lmstudio.ai/download/bartowski/Qwen2.5-32B-Instruct-GGUF)
-   - `phi-3-medium`: `Q8_0` [ssmits/Phi-3-medium-128k-instruct-Q8_0-GGUF](https://model.lmstudio.ai/download/ssmits/Phi-3-medium-128k-instruct-Q8_0-GGUF)
-   - `llama3.1-70B`: `Q4_K_M` [bartowski/Meta-Llama-3.1-70B-Instruct-GGUF](https://model.lmstudio.ai/download/bartowski/Meta-Llama-3.1-70B-Instruct-GGUF)
+   - **qwen 2.5** `32b`: [`32b-instruct-fp16`](https://ollama.com/library/qwen2.5:32b-instruct-fp16)
+   - **phi 3** `14b`: [`14b-medium-128k-instruct-fp16`](https://ollama.com/library/phi3:14b-medium-128k-instruct-fp16)
+   - **gemma 2** `27b`: [`27b-instruct-fp16`](https://ollama.com/library/gemma2:27b-instruct-fp16)
 
    While participants are free to explore other models during their research phase, our final assessment will be a comprehensive evaluation of submitted projects based on these three models.
 
