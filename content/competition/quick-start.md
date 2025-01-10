@@ -11,7 +11,7 @@ weight: 1
 {{< tabs items="Ollama (CLI), LM Studio (GUI)">}}
 
    {{< tab >}}
-   1. Download LM Studio from [Ollama](https://ollama.com).
+   1. Download Ollama from [Ollama](https://ollama.com).
    2. Download large language models:  
       To ensure fairness to the full，these **open-source models** are recommended to be used:
 
