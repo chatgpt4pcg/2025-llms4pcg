@@ -23,6 +23,8 @@ We've enhanced the competition platform to support a wide range of open-source L
 
 The competition welcomes participants of all skill levels, from those who simply modify existing prompts to those who develop sophisticated prompt engineering techniques. All submitted programs will be evaluated for qualification according to the competition rules and used to generate levels for each target English uppercase character across multiple LLMs. The generated levels will be assessed for stability using our Science Birds Evaluator and checked for similarity to target characters using an upgraded Vision Transformer (ViT) classifier. We retain the diversity metric introduced in ChatGPT4PCG 2, challenging participants to create prompts that generate stable, similar, and diverse levels across different open-source LLMs. This multi-model approach provides a unique opportunity to explore the strengths and limitations of various LLMs in the context of procedural content generation.
 
+{{< youtube id="ahfEglJD0r4" >}}
+
 ## Submission deadline
 
 {{< callout type="info" >}}
