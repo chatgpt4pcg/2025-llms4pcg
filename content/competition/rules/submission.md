@@ -64,10 +64,6 @@ To participate, you must submit your prompt according to our guidelines. We will
 
 We hope that this edition will be more exciting and contribute to collective learning and discovery in the world of prompt engineering through this game competition!
 
-{{< callout type="info" >}}
-To obtain more information about the competition, please do not hesitate to visit our previous competition website [here](https://chatgpt4pcg.github.io/), where you can find detailed information and updates regarding the event.
-{{< /callout >}}
-
 ## Submission Rules
 
 1. If a team submits multiple entries during a stage, midterm or final, we will consider the most recent submission as that team's final submission.
@@ -76,13 +72,9 @@ To obtain more information about the competition, please do not hesitate to visi
 
 ## Submission Deadline
 
-{{< callout type="info" >}}
-To be announced. Please stay tuned.
-{{< /callout >}}
+**Midterm**: 30 May 2025 (23:59 JST)
 
-**Midterm**: 30 May 2024 (23:59 JST)
-
-**Final**: 30 July 2024 (23:59 JST)
+**Final**: 30 July 2025 (23:59 JST)
 
 Midterm submission is optional, although we recommend it. Any team that submits during the mid-term submission will be notified of the preliminary results. However, all teams, whether they submit during the midterm or not, must submit during the final submission period. Only submissions during the final submission period will be considered for the final ranking.
 
