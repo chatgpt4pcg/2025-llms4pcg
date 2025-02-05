@@ -11,10 +11,6 @@ toc: false
 Welcome to the **2025 LLMs4PCG** Competition. Here you will be provided all the necessary information needed to participate in the competition.
 {{< /callout >}}
 
-{{< callout type="info" >}}
-Please remember to read carefully and thoroughly before contacting us for any questions you might have.
-{{< /callout >}}
-
 ### What is the LLMs4PCG Competition
 
 The LLMs4PCG Competition builds upon the challenging and exciting spirit of the first and second ChatGPT4PCG competitions while introducing significant changes. This edition expands the competition beyond ChatGPT to include a variety of open-source large language models (LLMs). Participants are challenged to develop prompts or prompt engineering techniques that can construct stable Science Birds levels resembling uppercase English characters using these diverse LLMs.
@@ -27,9 +23,11 @@ The competition welcomes participants of all skill levels, from those who simply
 
 ## Submission deadline
 
-{{< callout type="info" >}}
-To be announced. Please stay tuned.
-{{< /callout >}}
+**Midterm**: 30 May 2025 (23:59 JST)
+
+**Final**: 30 July 2025 (23:59 JST)
+
+Midterm submission is optional, although we recommend it. Any team that submits during the mid-term submission will be notified of the preliminary results. However, all teams, whether they submit during the midterm or not, must submit during the final submission period. Only submissions during the final submission period will be considered for the final ranking.
 
 ## Other Information
 
@@ -45,3 +43,7 @@ To be announced. Please stay tuned.
 
 If you have any questions, please contact us at this email address.  
 Email address: <chatgpt4pcg@gmail.com>
+
+{{< callout type="info" >}}
+Please remember to read carefully and thoroughly before contacting us for any questions you might have.
+{{< /callout >}}

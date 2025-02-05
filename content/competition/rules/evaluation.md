@@ -117,7 +117,7 @@ Finally, $norm\\_prompt\_{k}$ will be used for ranking. -->
 
 ## Ranking Policy
 
-The team that has the highest $norm\\_total\\_prompt\_{k}$ will be declared the winner. If there are multiple teams with the same highest score, the one with the shortest prompt will be chosen as the winner. However, if multiple teams still have the same score and the shortest prompt, they will be considered co-winners.
+The team that has the highest $norm\\_total\\_prompt\_{k}$ and overcomes our [zero-shot baseline](https://github.com/chatgpt4pcg/llms4pcg-pe-examples/tree/main/zero_shot) will be declared the winner. If there are multiple teams with the same highest score, the one with the shortest prompt will be chosen as the winner. However, if multiple teams still have the same score and the shortest prompt, they will be considered co-winners.
 
 ## Evaluation Tools
 
@@ -153,14 +153,11 @@ Hardware:
 
 ## Evaluation Process
 
-1. We manually inspect each submitted program for a potential violation of the rules.
-2. Submitted PE will be evaluated on all three models (average score)
-3. Better PE performs well on all models
-4. We will test generalizable of prompt engineering
-5. The [code extraction script](https://github.com/chatgpt4pcg/code-extraction-script) will load each response and produce a new file containing only a series of `drop_block()` commands.
-6. The [text-to-xml conversion script](https://github.com/chatgpt4pcg/text-to-xml-converter-script) will load each code file and convert it into a Science Birds level description XML file.
-7. Next, [Science Birds Evaluator](https://github.com/chatgpt4pcg/modified-science-birds) will individually load all levels to assess their stability and capture their images. The results of stability will be recorded, and for each level an image of the structure with black-textured blocks on a white background will be produced by the program.
-8. The [similarity checking script](https://github.com/chatgpt4pcg/similarity-checking-script) will load each image and pass it through an open source-model called [vit-base-uppercase-english-characters](https://huggingface.co/pittawat/vit-base-uppercase-english-characters). It will then record the similarity result.
-9. The [diversity checking script](https://github.com/chatgpt4pcg/diversity-checking-script) assesses the diversity of the levels by averaging the cosine distance of non-duplicated all-pairs of outputs from softmax for each level across trial of the same target character as described in the [Evaluation]({{< ref "/competition/rules/evaluation">}}).
-10. The [scoring and ranking script](https://github.com/chatgpt4pcg/scoring-and-ranking-script) will load all stability, similarity, and diversity results and produce the final rank and score result for all teams according to the scoring policy.
-11. Finally, we will calculate the sum of scores for all three models. Evaluation process for results from each model is same as this year competition.
+1. We manually inspect each submitted program for a potential violation of the rules. Qualified programs will be run to gather responses from the models to test the generalizable of prompt engineering
+2. The [code extraction script](https://github.com/chatgpt4pcg/code-extraction-script) will load each response and produce a new file containing only a series of `drop_block()` commands.
+3. The [text-to-xml conversion script](https://github.com/chatgpt4pcg/text-to-xml-converter-script) will load each code file and convert it into a Science Birds level description XML file.
+4. Next, [Science Birds Evaluator](https://github.com/chatgpt4pcg/modified-science-birds) will individually load all levels to assess their stability and capture their images. The results of stability will be recorded, and for each level an image of the structure with black-textured blocks on a white background will be produced by the program.
+5. The [similarity checking script](https://github.com/chatgpt4pcg/similarity-checking-script) will load each image and pass it through an open-source model called [vit-base-uppercase-english-characters](https://huggingface.co/pittawat/vit-base-uppercase-english-characters). It will then record the similarity result.
+6. The [diversity checking script](https://github.com/chatgpt4pcg/diversity-checking-script) assesses the diversity of the levels by averaging the cosine distance of non-duplicated all-pairs of outputs from softmax for each level across trial of the same target character as described in the [Evaluation]({{< ref "/competition/rules/evaluation">}}).
+7. The [scoring and ranking script](https://github.com/chatgpt4pcg/scoring-and-ranking-script) will load all stability, similarity, and diversity results and produce the final rank and score result for all teams according to the scoring policy.
+8. Finally, we will compute the normalized sum of scores across all three models.

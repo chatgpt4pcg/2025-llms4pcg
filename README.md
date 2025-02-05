@@ -12,7 +12,11 @@ _To obtain more information about the competition, please do not hesitate to vis
 
 ## Submission deadline
 
-ℹ️ To be announced. Please stay tuned.
+**Midterm**: 30 May 2025 (23:59 JST)
+
+**Final**: 30 July 2025 (23:59 JST)
+
+Midterm submission is optional, although we recommend it. Any team that submits during the mid-term submission will be notified of the preliminary results. However, all teams, whether they submit during the midterm or not, must submit during the final submission period. Only submissions during the final submission period will be considered for the final ranking.
 
 ## Contact Us
 
