@@ -1,5 +1,5 @@
 ---
-title: Organizers
+title: LLMs4PCG Organizers
 type: default
 toc: false
 ---
