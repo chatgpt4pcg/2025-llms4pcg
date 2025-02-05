@@ -31,6 +31,12 @@ The competition welcomes participants of all skill levels, from those who simply
 To be announced. Please stay tuned.
 {{< /callout >}}
 
+**Midterm**: 30 May 2024 (23:59 JST)
+
+**Final**: 30 July 2024 (23:59 JST)
+
+Midterm submission is optional, although we recommend it. Any team that submits during the mid-term submission will be notified of the preliminary results. However, all teams, whether they submit during the midterm or not, must submit during the final submission period. Only submissions during the final submission period will be considered for the final ranking.
+
 ## Other Information
 
 **Keywords:** Prompt engineering, Procedural content generation, Level generation, Conversational agent, Large language model, Angry Birds, Science Birds
