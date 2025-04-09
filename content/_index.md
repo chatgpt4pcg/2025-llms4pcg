@@ -52,5 +52,4 @@ Please remember to read carefully and thoroughly before contacting us for any qu
 <h4>As a part of</h4>
 </div>
 
-<!-- ![](/images/cog-2025-logo-w.png) -->
-[<img src="/images/cog-2025-logo-w.png">](https://cog2025.inesc-id.pt/)
+[![cog-2025-logo](/images/cog-2025-logo-w.png)](https://cog2025.inesc-id.pt/)
