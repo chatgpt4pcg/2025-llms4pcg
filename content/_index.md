@@ -47,3 +47,10 @@ Email address: <chatgpt4pcg@gmail.com>
 {{< callout type="info" >}}
 Please remember to read carefully and thoroughly before contacting us for any questions you might have.
 {{< /callout >}}
+
+<div style="text-align: center;">
+<h4>As a part of</h4>
+</div>
+
+<!-- ![](/images/cog-2025-logo-w.png) -->
+[<img src="/images/cog-2025-logo-w.png">](https://cog2025.inesc-id.pt/)
