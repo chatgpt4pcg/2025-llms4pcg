@@ -7,6 +7,11 @@ weight: 3
 math: true
 ---
 
+{{< callout type="info" >}}
+  The “**Similarity and Diversity Metrics**” section on this page was updated on May 19, 2025.  
+  See details in our [Similarity and Diversity Metrics]({{< ref "#similarity">}}).
+{{< /callout >}}
+
 The submitted prompts will undergo an evaluation process that involves subjecting them to 10 trials for each of the 26 uppercase letters of the English alphabet (A-Z). The levels generated for each character will be evaluated based on their similarity, stability, and diversity, and scored using the criteria outlined in the scoring policy given below. The entire evaluation process will be conducted using [automated scripts and programs]({{< ref "/competition/resources">}}).
 
 Please note that the evaluation process will be conducted twice, at midterm and final stages. The number of trials and characters in the evaluation set may be adjusted based on the number of teams.
@@ -34,13 +39,15 @@ $$ sta\_{ijk} = \frac{total\\\_blocks\_{ijk} - moving\\\_blocks\_{ijk}}{total\\\
 
 ### Similarity
 
-The similarity score reflects the softmax probability $\sigma (\textbf{z}_{ijk})_j$ of the model called [vit-base-uppercase-english-characters](https://huggingface.co/pittawat/vit-base-uppercase-english-characters), which is used to infer target character $j$ in trial $i$ from the image of the generated level after the first 10 seconds of initialization. Each level will receive a continuous value between $[0, 1]$. This score, $sim\_{ijk}$, is given as
+The similarity score reflects the softmax probability $\sigma (\textbf{z}^0_{ijkL})_j$ of the model called [vit-base-uppercase-english-characters](https://huggingface.co/pittawat/vit-base-uppercase-english-characters), which is used to infer target character $j$ in trial $i$ from the image of the generated level after the first 10 seconds of initialization. Each level will receive a continuous value between $[0, 1]$. 
 
-$$sim_{ijk} = \sigma (\textbf{z}_{ijk})_j$$
+The class token embedding in the output of the [Vision Transformer](https://arxiv.org/pdf/2010.11929) encoder ($\textbf{z}^0_{ijkL}$) serves as the level image representation, and the softmax is computed over this embedding. This score, $sim\_{ijk}$, is given as
+
+$$sim_{ijk} = \sigma (\textbf{z}^0_{ijkL})_j$$
 
 ### Diversity
 
-The diversity score represents how diverse the generated levels are under the same target character $j$ for program $k$. The score, $div_{jk}$, is calculated by computing cosine distance, $D_c$, of unordered pairs in the set $A$ containing pairs of output vectors from the softmax probability, $\textbf{v}\_{ijk} = \sigma(\textbf{z}_{ijk})$.
+The diversity score represents how diverse the generated levels are under the same target character $j$ for program $k$. The score, $div_{jk}$, is calculated by computing cosine distance, $D_c$, of unordered pairs in the set $A$ containing pairs of output vectors from the class token embedding, $\textbf{v}\_{ijk} = \textbf{z}^0_{ijkL}$.
 $\Xi\_{jk}$ denotes a set containing all such vectors across trials of the same target character $j$ from the same program $k$.
 
 $$div_{jk} = \frac{\sum_a^{|A_{jk}|} D_c(\textbf{v}_a^1, \textbf{v}_a^2)}{0.5T(T+1)-T}\text{,}$$

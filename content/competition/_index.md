@@ -3,12 +3,8 @@ title: Competition
 next: quick-start
 ---
 
-{{< callout type="warning" >}}
-Under construction, but not under wraps!
-{{< /callout >}}
-
-{{< callout type="info" >}}
-While we're fine-tuning our website, dive into the competition outline for a sneak peek at what's coming. Stay tuned for the full reveal!
+{{< callout emoji="👾" >}}
+Welcome to the **2025 LLMs4PCG** Competition. Here you will be provided all the necessary information needed to participate in the competition.
 {{< /callout >}}
 
 {{< cards >}}

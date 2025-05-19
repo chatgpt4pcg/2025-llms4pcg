@@ -3,6 +3,11 @@ title: LLMs4PCG 2025
 toc: false
 ---
 
+{{< callout type="info" >}}
+  The “**Similarity and Diversity Metrics**” was updated on May 19, 2025.  
+  See details in our [changelog]({{< ref "/changelog#may-19-2025">}}).
+{{< /callout >}}
+
 ## The LLMs4PCG Competition <br/> Character-like Level Generation for Science Birds
 
 ![](/images/LLMs4PCG_ci.png)
@@ -52,4 +57,4 @@ Please remember to read carefully and thoroughly before contacting us for any qu
 <h4>As a part of</h4>
 </div>
 
-[![cog-2025-logo](/images/cog-2025-logo-w.png)](https://cog2025.inesc-id.pt/)
+[![cog-2025-logo](/images/cog-2025-logo-w.png)](https://cog2025.inesc-id.pt/llms4pcg-competition/)

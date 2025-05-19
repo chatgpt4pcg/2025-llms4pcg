@@ -65,5 +65,5 @@ Visit our online Letter Classifier at https://chatgpt4pcg.github.io/tools/classi
 - Similarity checking script - https://github.com/chatgpt4pcg/similarity-checking-script
 - Diversity checking script - https://github.com/chatgpt4pcg/diversity-checking-script
 - Scoring and ranking script - https://github.com/chatgpt4pcg/scoring-and-ranking-script
-- LLM4PCG Python package - https://github.com/chatgpt4pcg/llm4pcg-python
+- LLMs4PCG Python package - https://github.com/chatgpt4pcg/llms4pcg-python
 <!-- - chatgpt4pcg npm package - https://github.com/chatgpt4pcg/chatgpt4pcg -->
