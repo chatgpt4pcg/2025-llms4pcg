@@ -51,7 +51,7 @@ Participants must submit the following files in a single zipped archive:
     - List of dependencies
 3. Additional Resources (if any): Any supplementary files required for the execution of the program.
 
-{{< callout emoji="👾" >}}
+{{< callout type="warning" >}}
 You do not need to submit the LLM itself, only the program that utilizes it.
 {{< /callout >}}
 
