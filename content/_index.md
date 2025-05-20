@@ -4,7 +4,9 @@ toc: false
 ---
 
 {{< callout type="info" >}}
-  The “**Similarity and Diversity Metrics**” was updated on May 19, 2025.  
+  **May 19, 2025**  
+  The “**Similarity and Diversity Metrics**” was updated.  
+  The **competition package** [llms4pcg-python 2.0.0](https://github.com/chatgpt4pcg/llms4pcg-python/releases/tag/2.0.0) package has been released.  
   See details in our [changelog]({{< ref "/changelog#may-19-2025">}}).
 {{< /callout >}}
 
