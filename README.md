@@ -20,5 +20,6 @@ Midterm submission is optional, although we recommend it. Any team that submits 
 
 ## Contact Us
 
-If you have any questions, please contact us at this email address.  
-Email address: <chatgpt4pcg@gmail.com>
+If you have any questions, please feel free to contact us.  
+Primary email: llm4pcg@ice.ci.ritsumei.ac.jp  
+Secondary email: chatgpt4pcg@gmail.com  

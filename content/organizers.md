@@ -15,5 +15,6 @@ toc: false
 
 ## Contact Us
 
+{{< icon "mail" >}}: <llm4pcg@ice.ci.ritsumei.ac.jp>  
 {{< icon "mail" >}}: <chatgpt4pcg@gmail.com>  
-{{< icon "github" >}}: https://github.com/chatgpt4pcg
+{{< icon "github" >}}: https://github.com/chatgpt4pcg  
