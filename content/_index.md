@@ -4,6 +4,11 @@ toc: false
 ---
 
 {{< callout type="info" >}}
+  **May 31, 2025** **Prize Announcement:**  
+  Exciting news! The competition now features a **total prize pool of 1,000 USD**, generously sponsored by the IEEE CIS Education Competition Subcommittee. [Read more about this update]({{< ref "/competition/prizes">}}).
+{{< /callout >}}
+
+{{< callout type="info" >}}
   **May 19, 2025**  
   The “**Similarity and Diversity Metrics**” was updated.  
   The **competition package** [llms4pcg-python 2.0.0](https://github.com/chatgpt4pcg/llms4pcg-python/releases/tag/2.0.0) package has been released.  
