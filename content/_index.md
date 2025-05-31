@@ -4,6 +4,11 @@ toc: false
 ---
 
 {{< callout type="info" >}}
+  **May 31, 2025** **Prize Announcement:**  
+  Exciting news! The competition now features a **total prize pool of 1,000 USD**, generously sponsored by the IEEE CIS Education Competition Subcommittee. [Read more about this update]({{< ref "/competition/prizes">}}).
+{{< /callout >}}
+
+{{< callout type="info" >}}
   **May 19, 2025**  
   The “**Similarity and Diversity Metrics**” was updated.  
   The **competition package** [llms4pcg-python 2.0.0](https://github.com/chatgpt4pcg/llms4pcg-python/releases/tag/2.0.0) package has been released.  
@@ -48,8 +53,12 @@ Midterm submission is optional, although we recommend it. Any team that submits 
 
 ## Contact Us
 
-If you have any questions, please contact us at this email address.  
+If you have any questions, please contact us at this email address. 
 Email address: <chatgpt4pcg@gmail.com>
+
+If you have any questions, please feel free to contact us.  
+Primary email: <llm4pcg@ice.ci.ritsumei.ac.jp>  
+Secondary email: <chatgpt4pcg@gmail.com>  
 
 {{< callout type="info" >}}
 Please remember to read carefully and thoroughly before contacting us for any questions you might have.

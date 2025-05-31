@@ -4,6 +4,14 @@ type: default
 toc: false
 ---
 
+## May 31, 2025
+
+### Added
+
+**Prize and Sponsor Information**  
+- Added information about the total prize pool (1,000 USD), sponsor (IEEE CIS Education Competition Subcommittee), and prize distribution (1st: 500 USD, 2nd: 300 USD, 3rd: 200 USD).
+- [Read more about this update]({{< ref "/competition/prizes">}}).
+
 ## May 19, 2025
 
 ### Changed
@@ -11,7 +19,7 @@ toc: false
 **Updated Similarity and Diversity Metrics Section**  
 - Revised the explanation for the similarity metric to clarify that the class token embedding from the final layer of the Vision Transformer encoder is used as the level image representation.  
 - Diversity metric now compares pairs of output vectors from the class token embedding.  
-- [Read more about this update]({{< ref "/competition/rules/evaluation#similarity">}})
+- [Read more about this update]({{< ref "/competition/rules/evaluation#similarity">}}).
 
 **Improved Random Seed Handling**
 - **Bug Fix in llms4pcg-python 2.0.0:** Resolved an issue in the previous dependency package where, under environments with full Ollama seed support, i.e., identical outputs were generated for every trial due to improper random seed implementation.
