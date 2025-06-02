@@ -35,7 +35,7 @@ The competition welcomes participants of all skill levels, from those who simply
 
 ## Submission deadline
 
-**Midterm**: 30 May 2025 (23:59 JST)
+~~**Midterm**: 30 May 2025 (23:59 JST)~~
 
 **Final**: 30 July 2025 (23:59 JST)
 

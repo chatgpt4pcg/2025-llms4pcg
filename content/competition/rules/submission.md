@@ -69,7 +69,7 @@ We hope that this edition will be more exciting and contribute to collective lea
 
 ## Submission Deadline
 
-**Midterm**: 30 May 2025 (23:59 JST)
+~~**Midterm**: 30 May 2025 (23:59 JST)~~
 
 **Final**: 30 July 2025 (23:59 JST)
 
