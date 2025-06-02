@@ -35,7 +35,7 @@ In trial $i$ of target character $j$ for program $k$:
 The stability of a level is evaluated
 using our [Science Birds Evaluator](https://github.com/chatgpt4pcg/modified-science-birds). Here, $total\\_blocks\_{ijk}$ is defined asthe number of blocks at the initialization step of loading the level into the evaluator. Then the program will calculate the value of $moving\\_blocks\_{ijk}$ which is defined as the number of moving blocks during the first 10 seconds after level initialization. Each level will receive an $sta\_{ijk}$ score according to the following equation. The score has a continuous value in $[0, 1]$.
 
-$$ sta\_{ijk} = \frac{total\\\_blocks\_{ijk} - moving\\\_blocks\_{ijk}}{total\\\_blocks\_{ijk}} $$
+$$ sta_{ijk} = \frac{total\\\_blocks_{ijk} - moving\\\_blocks_{ijk}}{total\\\_blocks_{ijk}} $$
 
 ### Similarity
 
@@ -43,18 +43,18 @@ The similarity score reflects the softmax probability $\sigma (\textbf{z}^0_{ijk
 
 The class token embedding in the output of the [Vision Transformer](https://arxiv.org/pdf/2010.11929) encoder ($\textbf{z}^0_{ijkL}$) serves as the level image representation, and the softmax is computed over this embedding. This score, $sim\_{ijk}$, is given as
 
-$$sim_{ijk} = \sigma (\textbf{z}^0_{ijkL})_j$$
+$$ sim_{ijk} = \sigma(\textbf{z}^0_{ijkL})_j $$
 
 ### Diversity
 
 The diversity score represents how diverse the generated levels are under the same target character $j$ for program $k$. The score, $div_{jk}$, is calculated by computing cosine distance, $D_c$, of unordered pairs in the set $A$ containing pairs of output vectors from the class token embedding, $\textbf{v}\_{ijk} = \textbf{z}^0_{ijkL}$.
 $\Xi\_{jk}$ denotes a set containing all such vectors across trials of the same target character $j$ from the same program $k$.
 
-$$div_{jk} = \frac{\sum_a^{|A_{jk}|} D_c(\textbf{v}_a^1, \textbf{v}_a^2)}{0.5T(T+1)-T}\text{,}$$
+$$ div_{jk} = \frac{\sum_a^{|A_{jk}|} D_c(\textbf{v}_a^1, \textbf{v}_a^2)}{0.5T(T+1)-T}\text{,} $$
 
 where
 
-$$ A\_{jk} = \\{(\textbf{v}\_a^1, \textbf{v}\_a^2) | (\textbf{v}\_a^1, \textbf{v}\_a^2) \in \Xi\_{jk} \bowtie \Xi\_{jk} \land v_a^1 \neq v_a^2 \\} $$
+$$ A_{jk} = \{{(\textbf{v}_a^1, \textbf{v}_a^2) | (\textbf{v}_a^1, \textbf{v}_a^2) \in \Xi_{jk} \bowtie \Xi_{jk} \land v_a^1 \neq v_a^2 \}} $$
 
 and $T$ represents the number of trials per target character.
 
@@ -65,28 +65,27 @@ characters, respectively, to give a higher weight to a more
 difficult target character, $weight_{j}$ for
 target character $j$ is defined as follows:
 
-$$weight_{j} = w\\_sta\_{j} \times w\\_sim\_{j} \times w\\_div\_{j}\text{,}$$
+$$ weight_{j} = {w\_sta}_{j} \times {w\_sim}_{j} \times {w\_div}_{j}\text{,} $$
 
 where
 
-$$w\\_sta\_{j} = max(1 - \frac{\sum\_{k=1}^{P} \sum\_{i=1}^{T} sta\_{ijk}}{PT}, \frac{1}{C})\text{,}$$
+$$ {w\_sta}_{j} = max(1 - \frac{\sum_{k=1}^{P} \sum_{i=1}^{T} sta_{ijk}}{PT}, \frac{1}{C})\text{,} $$
 
-$$w\\_sim\_{j} = max(1 - \frac{\sum\_{k=1}^{P} \sum\_{i=1}^{T} sim\_{ijk}}{PT}, \frac{1}{C})\text{,}$$
+$$ {w\_sim}_{j} = max(1 - \frac{\sum_{k=1}^{P} \sum_{i=1}^{T} sim_{ijk}}{PT}, \frac{1}{C})\text{,} $$
 
 and
 
-$$w\\_div\_{j} = max(1 - \frac{\sum\_{k=1}^{P} div\_{jk}}{P}, \frac{1}{C})$$
+$$ {w\_div}_{j} = max(1 - \frac{\sum_{k=1}^{P} div_{jk}}{P}, \frac{1}{C}) $$
 
 ### Scoring
 
 Next, the weighted $trial_{ijk}$ score is defined as follows:
 
-$$trial_{ijk} = weight_{j} \times sta_{ijk} \times sim_{ijk}$$
+$$ trial_{ijk} = weight_{j} \times sta_{ijk} \times sim_{ijk} $$
 
-The average score for target character <InlineMath math='j' /> of
-program $k$, $char_{jk}$, is defined as follows:
+The average score for target character $j$ of program $k$, $char_{jk}$, is defined as follows:
 
-$$char_{jk} = \frac{div_{jk}\sum_{i=1}^{T} trial_{ijk}}{T}$$
+$$ char_{jk} = \frac{div_{jk}\sum_{i=1}^{T} trial_{ijk}}{T} $$
 
 The $prompt_{k}$ score is defined as follows:
 
@@ -96,35 +95,25 @@ $$prompt_{k} = \frac{\sum_{j=1}^{C} char_{jk}}{C}$$
 
 After calculating the $prompt_{k}$ score for each of the three models, sum these scores to get the total prompt score for program $k$:
 
-$$ total\\_prompt\_{k} = \sum\_{m=1}^{3} prompt\_{k,m}$$
+$$ total\_prompt_{k} = \sum_{m=1}^{3} prompt_{k,m}$$
 
 where $m$ represents each of the three models.
 
-Next, the normalized $total\\_prompt\_{k}$ score, $norm\\_total\\_prompt\_{k}$, is defined as follows:
+Next, the normalized $total\\\_prompt_{k}$ score, ${norm\\\_total\\\_prompt}_{k}$, is defined as follows:
 
 $$$$
 
-$$ norm\\_total\\_prompt\_{k} = 100\ \frac{total\\_prompt\_{k}}{competition},$$ 
+$$ {norm\_total\_prompt}_{k} = 100\ \frac{total\_prompt_{k}}{competition}, $$ 
 
 where
 
-$$competition = \sum_{k=1}^P total\\_prompt\_{k}$$
+$$ competition = \sum_{k=1}^P {total\_prompt}_{k} $$
 
-Finally, $norm\\_total\\_prompt\_{k}$ will be used for ranking.
-
-<!-- Next, the normalized $prompt_{k}$ score, $norm\\_prompt\_{k}$, is defined as follows:
-
-$$norm\\_prompt\_{k} = 100\ \frac{prompt\_{k}}{competition}\text{,}$$
-
-where
-
-$$competition = \sum_{k=1}^{P} prompt_{k}$$
-
-Finally, $norm\\_prompt\_{k}$ will be used for ranking. -->
+Finally, ${norm\\\_total\\\_prompt}_{k}$ will be used for ranking.
 
 ## Ranking Policy
 
-The team that has the highest $norm\\_total\\_prompt\_{k}$ and overcomes our [zero-shot baseline](https://github.com/chatgpt4pcg/llms4pcg-pe-examples/tree/main/zero_shot) will be declared the winner. If there are multiple teams with the same highest score, the one with the shortest prompt will be chosen as the winner. However, if multiple teams still have the same score and the shortest prompt, they will be considered co-winners.
+The team that has the highest ${norm\\\_total\\\_prompt}_{k}$ and overcomes our [zero-shot baseline](https://github.com/chatgpt4pcg/llms4pcg-pe-examples/tree/main/zero_shot) will be declared the winner. If there are multiple teams with the same highest score, the one with the shortest prompt will be chosen as the winner. However, if multiple teams still have the same score and the shortest prompt, they will be considered co-winners.
 
 ## Evaluation Tools
 
