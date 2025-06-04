@@ -5,8 +5,7 @@ toc: false
 
 {{< callout type="info" >}}
   **June 4, 2025**  
-  **New Rule:** All participant code using random number generation must now set a fixed seed for reproducibility.  
-  [Read more about this update]({{< ref "/competition/rules/prompt#prompt-rules">}})
+  **New Rule:** All participant code using random number generation must now set a fixed seed for reproducibility. [Read more about this update]({{< ref "/competition/rules/prompt#prompt-rules">}})
 {{< /callout >}}
 
 {{< callout type="info" >}}
