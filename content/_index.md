@@ -4,6 +4,12 @@ toc: false
 ---
 
 {{< callout type="info" >}}
+  **June 4, 2025**  
+  **New Rule:** All participant code using random number generation must now set a fixed seed for reproducibility.  
+  [Read more about this update]({{< ref "/competition/rules/prompt#prompt-rules">}})
+{{< /callout >}}
+
+{{< callout type="info" >}}
   **May 31, 2025** **Prize Announcement:**  
   Exciting news! The competition now features a **total prize pool of 1,000 USD**, generously sponsored by the IEEE CIS Education Competition Subcommittee. [Read more about this update]({{< ref "/competition/prizes">}}).
 {{< /callout >}}
