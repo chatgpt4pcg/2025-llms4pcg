@@ -4,6 +4,14 @@ type: default
 toc: false
 ---
 
+## June 4, 2025
+
+### Added
+
+**Random Seed Requirement for Reproducibility**  
+- Added a rule requiring all participant code that uses random number generation (e.g., `random` in Python) to set a fixed seed in the code (e.g., `random.seed(42)`) for reproducibility.  
+- [Read more about this update]({{< ref "/competition/rules/prompt#prompt-rules">}}).  
+
 ## May 31, 2025
 
 ### Added
