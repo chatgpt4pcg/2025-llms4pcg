@@ -20,7 +20,7 @@ We provide a few example programs implemented using various prompt engineering t
    5. Modification of the message history of your model in a way that is considered cheating, such as altering the message history with manually created content (i.e., hard-coding answers), is prohibited.
    6. Modification of the token counter and timer used for the evaluation is prohibited.
    7. In the event of an error during a trial, that trial will be treated as producing an empty response.
-   8. To ensure fairness, each program combined (source code, tools, databases, etc.) must be at most 1GB in total size including any data downloaded as a result of running the submitted program, and each trial will last only 120 seconds. The sampling temperature and random seed are always fixed at 1 and 42, respectively.
+   8. To ensure fairness, each program combined (source code, tools, databases, etc.) must be at most 1GB in total size including any data downloaded as a result of running the submitted program, and each trial will last only 120 seconds.
    9. Automatic prompt optimization may be utilized, but its use during the evaluation is discouraged as it quickly consumes available token limits. Therefore, we suggest employing these techniques beforehand.
    10. The sampling temperature is always fixed at 1. The random seed is not set during regular use to allow for varied outputs; however, a selected master seed will be used during final evaluation for reproducibility.
    11. If your code uses random number generation (e.g., `random` in Python), you <span style="color:#f44336">**must set a fixed seed in your code**</span> (e.g., `random.seed(42)`) to ensure reproducibility. Do not use system time or other varying values as the seed. 
