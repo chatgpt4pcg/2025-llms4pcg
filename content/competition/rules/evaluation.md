@@ -138,14 +138,14 @@ The team that has the highest ${norm\\\_total\\\_prompt}_{k}$ and overcomes our 
 
 Software:
 
-- OS: macOS Sonoma Version 14.5
-- Python: 3.11.xx
+- OS: macOS Sequoia 15.2
+- Python: >= 3.11, < 3.14
 - Unity: 2019.4.40f1 - [Science Birds Evaluator](https://github.com/chatgpt4pcg/modified-science-birds)
 - [Our automation scripts]({{< ref "/competition/resources">}})
 
 Hardware:
 
-- Chip: Apple M2 Ultra - RAM: 128 GB
+- Chip: Mac Studio M2 Ultra - Memory 192 GB
 
 ## Evaluation Process
 
