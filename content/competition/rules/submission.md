@@ -77,4 +77,4 @@ Midterm submission is optional, although we recommend it. Any team that submits 
 
 ## Result Announcement
 
-All participating teams will receive email notifications of their results using the email addresses provided in the submission email. The winner will also be announced on our website.
+The final results will be announced between August 26 - 29, 2025, during the [competition session at IEEE CoG 2025](https://cog2025.inesc-id.pt/program/#schedule) and will also be available on the competition website shortly thereafter. All participating teams will receive email notifications of their results using the email addresses provided in their submission. In addition, the winner will be announced on our website.
