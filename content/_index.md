@@ -30,7 +30,7 @@ Welcome to the **2025 LLMs4PCG** Competition. Here you will be provided all the 
 
 ### What is the LLMs4PCG Competition
 
-The LLMs4PCG Competition builds upon the challenging and exciting spirit of the first and second ChatGPT4PCG competitions while introducing significant changes. This edition expands the competition beyond ChatGPT to include a variety of open-source large language models (LLMs). Participants are challenged to develop prompts or prompt engineering techniques that can construct stable Science Birds levels resembling uppercase English characters using these diverse LLMs.
+The LLMs4PCG Competition builds upon the challenging and exciting spirit of the [first](https://chatgpt4pcg.github.io/2023) and [second](https://chatgpt4pcg.github.io/) ChatGPT4PCG competitions while introducing significant changes. This edition expands the competition beyond ChatGPT to include a variety of open-source large language models (LLMs). Participants are challenged to develop prompts or prompt engineering techniques that can construct stable Science Birds levels resembling uppercase English characters using these diverse LLMs.
 
 We've enhanced the competition platform to support a wide range of open-source LLMs, allowing participants to explore and compare the capabilities of different models. Submissions can now be in the form of Python programs, enabling more complex prompt engineering techniques that utilize conditions, iterations, and advanced logic. This opens up possibilities for developing novel approaches and potentially creating new prompt engineering methods tailored to specific LLMs.
 
