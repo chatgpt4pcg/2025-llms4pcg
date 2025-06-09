@@ -4,20 +4,19 @@ toc: false
 ---
 
 {{< callout type="info" >}}
+  **June 9, 2025**  
+  The **competition package** [llms4pcg-python 2.0.1](https://github.com/chatgpt4pcg/llms4pcg-python/releases/tag/2.0.1) package has been released.  
+  See details in our [changelog]({{< ref "/changelog#june-9-2025">}}).
+{{< /callout >}}
+
+{{< callout type="warning" >}}
   **June 4, 2025**  
-  **New Rule:** All participant code using random number generation must now set a fixed seed for reproducibility. [Read more about this update]({{< ref "/competition/rules/prompt#prompt-rules">}})
+  **New Rule!** All participant code using random number generation must now set a fixed seed for reproducibility. [Read more about this update]({{< ref "/competition/rules/prompt#prompt-rules">}})
 {{< /callout >}}
 
 {{< callout type="info" >}}
   **May 31, 2025** **Prize Announcement:**  
   Exciting news! The competition now features a **total prize pool of 1,000 USD**, generously sponsored by the IEEE CIS Education Competition Subcommittee. [Read more about this update]({{< ref "/competition/prizes">}}).
-{{< /callout >}}
-
-{{< callout type="info" >}}
-  **May 19, 2025**  
-  The “**Similarity and Diversity Metrics**” was updated.  
-  The **competition package** [llms4pcg-python 2.0.0](https://github.com/chatgpt4pcg/llms4pcg-python/releases/tag/2.0.0) package has been released.  
-  See details in our [changelog]({{< ref "/changelog#may-19-2025">}}).
 {{< /callout >}}
 
 ## The LLMs4PCG Competition <br/> Character-like Level Generation for Science Birds
