@@ -31,18 +31,21 @@ We provide a few example programs implemented using various prompt engineering t
    3. If no code blocks are present or extracted code results in an empty string, the response will be skipped, and its score will be 0.
 4. All plugins and function callings are disabled during the evaluation process.
 5. The final response from your program must explicitly include a series of `drop_block()`, which will be executed in that order by our tool to generate a character-like structure in a Science Birds level.
-6. The definition of the `drop_block()` function is as follows:
-   1. It drops a block vertically drop a block from the top and center it at a specific slot, denoted by `x_position`.
-   2. This function works on the following settings:
-      1. A structure is situated on a 2D grid with a width (`W`) of 20 columns and a height (`H`) of 16 rows. The grid consists of 320 cells, each of equal size.
-      2. Coordinates `(x, y)` are used to represent the positions in the grid, where `x` and `y` show the horizontal and vertical indices of cells, respectively. For example, `(0, 0)` denotes the bottom-left corner cell of the grid, and `(W-1, H-1)` is the top-right corner cell.
-      3. A cell on the grid has a size of 1x1. Each cell has unique `(x, y)` coordinates associated with it.
-   3. This function accepts two parameters:
-      1. `block_type`: a value that indicates the type of block to be placed. The possible values are`b11`, `b13`, and `b31`. An invalid block type will result in an error.
-         1. `b11` denotes a square block whose size is 1x1.  
-            ![image](https://chatgpt4pcg.github.io/images/nextImageExportOptimizer/b11-opt-48.WEBP)
-         2. `b13` denotes a column block whose size is 1x3.  
-            ![image](https://chatgpt4pcg.github.io/images/nextImageExportOptimizer/b13-opt-48.WEBP)
-         3. `b31` denotes a row block whose size is 3x1.  
-            ![image](https://chatgpt4pcg.github.io/images/nextImageExportOptimizer/b31-opt-256.WEBP)
-      2. `x_position`: a horizontal index of a grid cell, where `0` represents the leftmost column of the grid, and `W-1` represents the rightmost column of the grid. The `x_position` parameter indicates the center pivot point of the block being placed. For example, if `b31` is the only block in the level and is placed at `x_position=4`, it will occupy cells `(3, 0)`, `(4, 0)`, and `(5, 0)`. An invalid position, like a position where a block of interest intrudes on the grid boundary, will result in an error.
+
+### The `drop_block()` function
+
+The definition of the `drop_block(block_type: str, x_position, int)` function is as follows:
+1. It drops a block vertically drop a block from the top and center it at a specific slot, denoted by `x_position`.
+2. This function works on the following settings:
+   1. A structure is situated on a 2D grid with a width (`W`) of 20 columns and a height (`H`) of 16 rows. The grid consists of 320 cells, each of equal size.
+   2. Coordinates `(x, y)` are used to represent the positions in the grid, where `x` and `y` show the horizontal and vertical indices of cells, respectively. For example, `(0, 0)` denotes the bottom-left corner cell of the grid, and `(W-1, H-1)` is the top-right corner cell.
+   3. A cell on the grid has a size of 1x1. Each cell has unique `(x, y)` coordinates associated with it.
+3. This function accepts two parameters:
+   1. `block_type: str`: a value that indicates the type of block to be placed. The possible values are`b11`, `b13`, and `b31`. An invalid block type will result in an error.
+      1. `b11` denotes a square block whose size is 1x1.  
+         ![image](https://chatgpt4pcg.github.io/images/nextImageExportOptimizer/b11-opt-48.WEBP)
+      2. `b13` denotes a column block whose size is 1x3.  
+         ![image](https://chatgpt4pcg.github.io/images/nextImageExportOptimizer/b13-opt-48.WEBP)
+      3. `b31` denotes a row block whose size is 3x1.  
+         ![image](https://chatgpt4pcg.github.io/images/nextImageExportOptimizer/b31-opt-256.WEBP)
+   2. `x_position: int`: a horizontal index of a grid cell, where `0` represents the leftmost column of the grid, and `W-1` represents the rightmost column of the grid. The `x_position` parameter indicates the center pivot point of the block being placed. For example, if `b31` is the only block in the level and is placed at `x_position=4`, it will occupy cells `(3, 0)`, `(4, 0)`, and `(5, 0)`. An invalid position, like a position where a block of interest intrudes on the grid boundary, will result in an error.

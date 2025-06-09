@@ -4,6 +4,21 @@ type: default
 toc: false
 ---
 
+## June 9, 2025
+
+### Changed
+
+**Evaluation Environment Updates**
+- Updated supported operating systems to macOS Sequoia `15.2`.
+- Updated supported Python versions to explicitly require Python >= `3.11`, < `3.14`.
+- Upgraded new hardware configuration: Mac Studio M2 Ultra with 192 GB memory.
+
+**llms4pcg-python Package Update**
+- Upgraded `llms4pcg-python` from version `2.0.0` to `2.0.1`.
+- Removed the explicit response timeout parameter from the OpenAI client, allowing model responses to proceed without a fixed timeout constraint.
+- Increased the maximum trial time limit (`max_time`) from 120 seconds to 500 seconds, enabling longer trials and more complex interactions.
+- For detailed information, please refer to the [release notes](https://github.com/chatgpt4pcg/llms4pcg-python/releases/tag/2.0.1).
+
 ## June 4, 2025
 
 ### Added

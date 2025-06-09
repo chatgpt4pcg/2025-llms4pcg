@@ -7,11 +7,6 @@ weight: 3
 math: true
 ---
 
-{{< callout type="info" >}}
-  The “**Similarity and Diversity Metrics**” section on this page was updated on May 19, 2025.  
-  See details in our [Similarity and Diversity Metrics]({{< ref "#similarity">}}).
-{{< /callout >}}
-
 The submitted prompts will undergo an evaluation process that involves subjecting them to 10 trials for each of the 26 uppercase letters of the English alphabet (A-Z). The levels generated for each character will be evaluated based on their similarity, stability, and diversity, and scored using the criteria outlined in the scoring policy given below. The entire evaluation process will be conducted using [automated scripts and programs]({{< ref "/competition/resources">}}).
 
 Please note that the evaluation process will be conducted twice, at midterm and final stages. The number of trials and characters in the evaluation set may be adjusted based on the number of teams.
@@ -136,16 +131,14 @@ The team that has the highest ${norm\\\_total\\\_prompt}_{k}$ and overcomes our 
 
 ## Evaluation Environment for Response Generation Stage
 
-Software:
-
-- OS: macOS Sonoma Version 14.5
-- Python: 3.11.xx
+**Software**
+- OS: macOS Sequoia 15.2
+- Python: >= 3.11, < 3.14
 - Unity: 2019.4.40f1 - [Science Birds Evaluator](https://github.com/chatgpt4pcg/modified-science-birds)
 - [Our automation scripts]({{< ref "/competition/resources">}})
 
-Hardware:
-
-- Chip: Apple M2 Ultra - RAM: 128 GB
+**Hardware**
+- Chip: Mac Studio M2 Ultra - Memory 192 GB
 
 ## Evaluation Process
 
