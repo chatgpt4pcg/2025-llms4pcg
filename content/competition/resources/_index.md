@@ -36,7 +36,7 @@ For further installation steps, please refer to the [Science Birds](https://gith
 
 ### Online Converter
 
-The converter is a tool that creates an XML file and an image from a series of drop_block() function string. The resulting XML file provides a structured representation of the functions while an image shows the visual representation of the functions. It is recommended to use the converter on a desktop device to ensure optimal usage and accurate generation of output files.
+The converter is a tool that creates an XML file and an image from a series of `drop_block()` function string. The resulting XML file provides a structured representation of the functions while an image shows the visual representation of the functions. It is recommended to use the converter on a desktop device to ensure optimal usage and accurate generation of output files.
 
 1. Visit our online converter at https://chatgpt4pcg.github.io/tools/converter
 2. Paste the text into the first input box, ensuring that it is in the correct format
