@@ -16,8 +16,8 @@ weight: 1
       To ensure fairness to the full, these **open-source models** are recommended to be used:
 
          - **qwen 2.5** `32b`: [`32b-instruct-fp16`](https://ollama.com/library/qwen2.5:32b-instruct-fp16)
-         - **phi 3** `14b`: [`14b-medium-128k-instruct-fp16`](https://ollama.com/library/phi3:14b-medium-128k-instruct-fp16)
          - **gemma 2** `27b`: [`27b-instruct-fp16`](https://ollama.com/library/gemma2:27b-instruct-fp16)
+         - **phi 3** `14b`: [`14b-medium-128k-instruct-fp16`](https://ollama.com/library/phi3:14b-medium-128k-instruct-fp16)
 
          If your computer can't afford these models, you are welcome to use a <span style="color:#4C97ED">**quantized version**</span> or <span style="color:#4C97ED">**other open-source models**</span>.
 
@@ -30,8 +30,8 @@ weight: 1
    To ensure fairness to the full, these **open-source models** are recommended to be used:
 
       - **qwen2.5-32B**: `Q8_0` [bartowski/Qwen2.5-32B-Instruct-GGUF](https://model.lmstudio.ai/download/bartowski/Qwen2.5-32B-Instruct-GGUF)
-      - **phi-3-medium**: `Q8_0` [ssmits/Phi-3-medium-128k-instruct-Q8_0-GGUF](https://model.lmstudio.ai/download/ssmits/Phi-3-medium-128k-instruct-Q8_0-GGUF)
       - **gemma2-27B**: `Q8_0` [lmstudio-community/gemma-2-27b-it-GGUF](https://huggingface.co/lmstudio-community/gemma-2-27b-it-GGUF)
+      - **phi-3-medium**: `Q8_0` [ssmits/Phi-3-medium-128k-instruct-Q8_0-GGUF](https://model.lmstudio.ai/download/ssmits/Phi-3-medium-128k-instruct-Q8_0-GGUF)
 
       If your computer can't afford these models, you are welcome to use a <span style="color:#4C97ED">**quantized version**</span> or <span style="color:#4C97ED">**other open-source models**</span>.
 

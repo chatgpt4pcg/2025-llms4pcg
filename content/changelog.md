@@ -68,7 +68,7 @@ toc: false
 ### Added
 
 - Examples of prompt engineering for LLMs4PCG competition utilizing our Python package, [llms4pcg-python](https://github.com/chatgpt4pcg/llms4pcg-python).
-- Model selection: `qwen-2.5-32b`, `phi-3-14b`, and `gemma-2-27b`.
+- Model selection: `qwen-2.5-32b`, `gemma-2-27b`, and `phi-3-14b`.
 
 ## December 5, 2024
 
