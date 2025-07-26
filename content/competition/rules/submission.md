@@ -6,13 +6,16 @@ next: competition/rules/evaluation/
 weight: 2
 ---
 
+{{< callout type="info" >}}
+  Your submission can be made using the following form:  
+  https://forms.gle/oAZQscN1S9UsQEv66
+{{< /callout >}}
+
 ## Submission Guideline
 
 Before submitting, please ensure that your **program** follows our guidelines by checking the [Rules]({{< ref "/competition/rules">}}) and [Prompt]({{< ref "/competition/rules/prompt">}}) pages. It is particularly important that the `drop_block()` function used in your **program** is defined in the same way as our [rules]({{< ref "/competition/rules/prompt#the-drop_block-function">}}). If not, your results may be unexpected.
 
 The submitted file should be zipped and provide a `README.md` file containing instructions on how to run your **program** along with any required dependencies in the zip file. Please also describe your approach in the `README.md` file. Failure to provide your instructions may result in a delayed evaluation process and disqualification from the competition. You may find the following `README.md` template helpful.
-
-Your submission can be made using the following form: https://forms.gle/oAZQscN1S9UsQEv66
 
 ```md {filename=README.md}
 # Team Name

@@ -3,20 +3,11 @@ title: LLMs4PCG 2025
 toc: false
 ---
 
-{{< callout type="info" >}}
-  **June 9, 2025**  
-  The **competition package** [llms4pcg-python 2.0.1](https://github.com/chatgpt4pcg/llms4pcg-python/releases/tag/2.0.1) package has been released.  
-  See details in our [changelog]({{< ref "/changelog#june-9-2025">}}).
-{{< /callout >}}
-
 {{< callout type="warning" >}}
-  **June 4, 2025**  
-  **New Rule!** All participant code using random number generation must now set a fixed seed for reproducibility. [Read more about this update]({{< ref "/competition/rules/prompt#prompt-rules">}})
-{{< /callout >}}
-
-{{< callout type="info" >}}
-  **May 31, 2025** **Prize Announcement:**  
-  Exciting news! The competition now features a **total prize pool of 1,000 USD**, generously sponsored by the IEEE CIS Education Competition Subcommittee. [Read more about this update]({{< ref "/competition/prizes">}}).
+This is the **final call** for submissions! The deadline is **30 July 2025 (23:59 JST)**.  
+You can make your submission using the following form:  
+https://forms.gle/oAZQscN1S9UsQEv66  
+**We look forward to receiving your submission!**
 {{< /callout >}}
 
 ## The LLMs4PCG Competition <br/> Character-like Level Generation for Science Birds
@@ -56,9 +47,6 @@ Midterm submission is optional, although we recommend it. Any team that submits 
 **Barrier of entry:** Low
 
 ## Contact Us
-
-If you have any questions, please contact us at this email address. 
-Email address: <chatgpt4pcg@gmail.com>
 
 If you have any questions, please feel free to contact us.  
 Primary email: <llm4pcg@ice.ci.ritsumei.ac.jp>  
