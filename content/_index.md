@@ -3,11 +3,8 @@ title: LLMs4PCG 2025
 toc: false
 ---
 
-{{< callout type="warning" >}}
-This is the **final call** for submissions! The deadline is **30 July 2025 (23:59 JST)**.  
-You can make your submission using the following form:  
-https://forms.gle/oAZQscN1S9UsQEv66  
-**We look forward to receiving your submission!**
+{{< callout type="info" >}}
+**Thank you to everyone who submitted! Submissions are now closed.**
 {{< /callout >}}
 
 ## The LLMs4PCG Competition <br/> Character-like Level Generation for Science Birds
@@ -32,7 +29,7 @@ The competition welcomes participants of all skill levels, from those who simply
 
 ~~**Midterm**: 30 May 2025 (23:59 JST)~~
 
-**Final**: 30 July 2025 (23:59 JST)
+~~**Final**: 30 July 2025 (23:59 JST)~~
 
 Midterm submission is optional, although we recommend it. Any team that submits during the mid-term submission will be notified of the preliminary results. However, all teams, whether they submit during the midterm or not, must submit during the final submission period. Only submissions during the final submission period will be considered for the final ranking.
 

@@ -6,9 +6,8 @@ next: competition/rules/evaluation/
 weight: 2
 ---
 
-{{< callout type="info" >}}
-  Your submission can be made using the following form:  
-  https://forms.gle/oAZQscN1S9UsQEv66
+{{< callout type="error" >}}
+**Submissions are now closed.**
 {{< /callout >}}
 
 ## Submission Guideline
@@ -74,7 +73,7 @@ We hope that this edition will be more exciting and contribute to collective lea
 
 ~~**Midterm**: 30 May 2025 (23:59 JST)~~
 
-**Final**: 30 July 2025 (23:59 JST)
+~~**Final**: 30 July 2025 (23:59 JST)~~
 
 Midterm submission is optional, although we recommend it. Any team that submits during the mid-term submission will be notified of the preliminary results. However, all teams, whether they submit during the midterm or not, must submit during the final submission period. Only submissions during the final submission period will be considered for the final ranking.
 
