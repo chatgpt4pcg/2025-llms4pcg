@@ -27,21 +27,24 @@ menu:
     - name: Competition
       pageRef: /competition
       weight: 1
+    - name: Result
+      pageRef: /result
+      weight: 2
     - name: Organizers
       pageRef: /organizers
-      weight: 2
+      weight: 3
     - name: Changelog
       pageRef: /changelog
-      weight: 3
+      weight: 4
     - name: Contact ↗
       url: "https://github.com/chatgpt4pcg"
-      weight: 4
-    - name: Search
       weight: 5
+    - name: Search
+      weight: 6
       params:
         type: search
     - name: GitHub
-      weight: 6
+      weight: 7
       url: "https://github.com/chatgpt4pcg/2025-llms4pcg"
       params:
         icon: github
