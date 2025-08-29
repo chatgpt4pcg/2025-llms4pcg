@@ -4,7 +4,9 @@ toc: false
 ---
 
 {{< callout type="info" >}}
-**Thank you to everyone who submitted! Submissions are now closed.**
+**Thank you all participants for your final submission!**  
+The result is now available in the [result]({{< ref "/result">}}) page.
+Congratulations to the winners! 🎉
 {{< /callout >}}
 
 ## The LLMs4PCG Competition <br/> Character-like Level Generation for Science Birds

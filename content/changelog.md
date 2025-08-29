@@ -4,6 +4,12 @@ type: default
 toc: false
 ---
 
+## August 29, 2025
+
+### Added
+
+- We have released the [result of the competition]({{< ref "/result">}}).
+
 ## June 9, 2025
 
 ### Changed
